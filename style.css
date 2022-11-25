@@ -189,7 +189,7 @@ body{
 
 .icon__container a:hover{
     transform: rotate(-360deg) scale(1.075);
-    transition:all 0.45s ease;
+    transition:all 0.45s ;
     cursor: pointer;
     color: #9E7676;
 }
