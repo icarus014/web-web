@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kummh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #FFF8EA;
+    margin: 0;
+}
+
+
+
+/* Navbar CSS */
+.navbar{
+    background: #FFF8EA;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+
+.navbar__item{
+    height: 80px;
+}
+
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__links{
+    color: #594545;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding:0 1rem;
+    height: 100%;
+}
+
+
+.navbar__links:hover {
+    color: #9E7676;
+    transition: all 0.3s ease;
+}
+
+
+/* Hero Section*/
+
+.main {
+    background-color: #FFF8EA;
+}
+
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self:center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #FFF8EA;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1{
+    font-size: 4rem;
+    background-color: #9E7676;
+    background-image: linear-gradient(to top, #9E7676 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    font-size: 4rem;
+    background-color: #9E7676;
+    background-image: linear-gradient(to top, #9E7676, #594545 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #594545;}
+
+
+.main__btn{
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #9E7676 0%, #ffb199 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #594545;
+    text-decoration: none;
+}
+
+.main__btn:hover {
+    color: #fff;    
+    transition: all 0.3s ease;
+}
+
+.main__btn::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9E7676; 
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;    
+}
+
+.main__btn:hover:after{
+    width: 100%;
+}
+
+/* Hero Contact Icons */
+
+.icon__container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.icon__container li{
+    list-style: none;
+    color: #594545;
+    padding: 100px;
+}
+
+
+.icon__container a{
+    text-decoration: none;
+    color: #594545;
+    padding: 100px;
+    animation-play-state: paused;    
+}
+
+.icon__container a:hover{
+    transform: rotate(-360deg) scale(1.075);
+    transition:0.45s ease-in ;
+    cursor: pointer;
+    color: #9E7676;
+}
+
+
+/* About Section CSS */
+.about{
+    background: #FFF8EA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.about h1{
+    background-color: #141414;
+    background-image: linear-gradient(to right,#9E7676  0%, #9E7676 0%, #9E7676 21%, #815B5B 52%, #9E7676 78%, #815B5B);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    -moz-text-fill-color: transparent;
+}
+
+
+.about h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+
+.about p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+
+
+
+
+.about__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+.about__card{
+    margin: 1rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-size: cover;
+  position: relative;
+  color: #FFF8EA;
+}
+
+
+.about__card:nth-child(2){
+  background-image: linear-gradient(to bottom, rgb(158, 118, 118) 0%, rgb(89, 69, 69) 100%), url('/images/pic2.jpg');
+}
+
+
+.about__card:nth-child(1){
+    background-image: linear-gradient(to bottom, rgb(158, 118, 118) 0%, rgb(89, 69, 69) 100%), url('/images/pic2.jpg');
+}
+
+
+.about__card:hover{
+    cursor: pointer;
+    color: tan;
+    transition: all 0.3s ease;
+}
+
+
+/* Footer CSS */
+
+.footer__container{
+    background-color: #9E7676 ;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .footer__links{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+ }
+
+
+ .footer_links--wrapper{
+    display: flex;
+    justify-content: center;
+ }
+
+ .footer__links--items{
+    display: flex;
+    align-items: flex-start;
+    margin: 10x;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    justify-content: center;
+
+ }
+
+ .footer__links--items h2 {
+   justify-content: center;
+    color: #FFF8EA;
+    margin: auto;
+    
+ }
+
+ 
+
+ /* Footer Icon CSS */
+
+.footer__links--items{
+    color: #9E7676;
+    text-decoration: none;
+}
+
+.fa-instagram{
+    color: #594545;
+    padding-left: 20px;
+}
+.fa-phone{
+    color: #594545;
+    padding-left: 20px;
+}
+.fa-envelope{
+    color: #594545;
+    padding-left: 20px;
+}
+.fa-linkedin{
+    color: #594545;
+    padding-left: 20px;
+}
+
+.fa-instagram:hover{
+    transition:0.45s ease-in ;
+    cursor: pointer;
+    color: #FFF8EA;
+    }
+    
+
+.fa-linkedin:hover{
+    transition:0.45s ease-in ;
+    cursor: pointer;
+    color: #FFF8EA;
+}
+
+
+ 
